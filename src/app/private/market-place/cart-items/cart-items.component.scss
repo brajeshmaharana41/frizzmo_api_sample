@@ -1,0 +1,56 @@
+  mat-icon{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title{
+    padding-right: 15px;
+    color: #B3B3B3;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+  }
+  .subtitle{
+    padding-left: 15px;
+    color: #808080;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+  }
+  mat-step{
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+.clo-icon{
+  color: #fdfdfd;
+}
+
+::ng-deep .mat-step-text-label {
+  font-size: 12px !important;
+  font-family: 'Montserrat'; 
+  font-weight: 700;
+  color: #808080;
+}
+@media only screen and (min-width: 130px) and (max-width: 480px){
+
+  ::ng-deep .mat-step-text-label {
+    font-size: 8px !important;
+    font-family: 'Montserrat'; 
+    font-weight: 700;
+    color: #808080;
+  }
+}
+::ng-deep .mat-horizontal-stepper-header {
+  box-sizing: border-box;
+  flex-direction: column !important;
+  height: auto;
+  padding: 24px;
+}
+::ng-deep .mat-horizontal-stepper-header .mat-step-label {
+  padding: 5px 0px 0px !important;
+}
+// ::ng-deep .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:first-child)::before, ::ng-deep .mat-stepper-label-position-bottom .mat-horizontal-stepper-header:not(:last-child)::after{
+//   top: 68px !important;
+// }

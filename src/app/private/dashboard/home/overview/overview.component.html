@@ -1,0 +1,54 @@
+<div class="pt-5 pb-3">
+        <div fxLayout="row warp" class="p-2">
+            <div fxFlex.xs="100" fxFlex.sm="30" fxFlex.md="30" fxFlex.lg="30" fxFlex.xl="30">
+                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="gappx">
+                    <span class="title">Overview</span>
+                </div>
+            </div>
+            <div fxFlex.xs="100" fxFlex.sm="70" fxFlex.md="70" fxFlex.lg="70" fxFlex.xl="70">
+                <div class="weeks">
+                    <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="gappx">
+                        <div class="pr-3">
+                            <mat-button-toggle-group name="fontStyle" aria-label="Font Style" class="date">
+                                <mat-button-toggle value="bold">Days</mat-button-toggle>
+                                <mat-button-toggle value="italic">Weeks</mat-button-toggle>
+                                <mat-button-toggle value="underline" style="background: #00aa72; color: white;">Months</mat-button-toggle>
+                            </mat-button-toggle-group>
+                        </div>
+                        <div>
+                            <button class="dates">
+                                <mat-icon class="range">date_range</mat-icon>
+                                <span style="color: #5A607F">Jan, 2019 - Dec, 2019</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="week p-2">
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="gappx">
+                <div>
+                    <mat-button-toggle-group name="fontStyle" aria-label="Font Style" class="date">
+                        <mat-button-toggle value="bold">Days</mat-button-toggle>
+                        <mat-button-toggle value="italic">Weeks</mat-button-toggle>
+                        <mat-button-toggle value="underline" style="background: #00aa72; color: white;">Months
+                        </mat-button-toggle>
+                    </mat-button-toggle-group>
+                </div>
+                <div>
+                    <button class="dates">
+                        <mat-icon class="range">date_range</mat-icon>
+                        <span style="color: #5A607F">Jan, 2019 - Dec, 2019</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div fxLayout="row wrap">
+    <div fxFlex.xs="50" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25" *ngFor="let overViewinfo of overViewinfos">
+        <div class="p-2">
+            <app-overview-cards [walletData] = "overViewinfo"></app-overview-cards>
+        </div>
+    </div>
+</div>
+
